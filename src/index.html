@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Who Won?</title>
+</head>
+<body>
+    <nav class="navbar navbar-light" style="background-color: #F3F3EE;">
+        <a class="navbar-brand brand" href="#">
+          Who Won It?
+        </a>
+    </nav>
+    <div class="fluid-container">
+        <!-- THIS IS THE CONTAINER WHERE WE'RE GOING TO HOLD THE MAIN CONTENT OF THE APP -->
+        <div class="main-container">
+            
+            <div class="row mx-0" id='hub'>
+                
+                <!-- THIS IS WHERE THE SEARCH BARS ARE  -->
+                <!-- EASIER TO NAME 0 AND 1 FOR OUR CONTROLLER LOGIC-->
+                <div class='col player_0_search mb-2'>
+                    
+                    <input type="text" id="player_0_search_result"/>
+
+                </div>
+
+                <div class='col player_1_search mb-2'>
+
+                    <input type="text" id="player_1_search_result"/>
+
+                </div>
+
+                <!-- COL DIVIDER BETWEEN SEARCH BARS AND PLAYER CARDS w-100 MAKES A BREAK TO A NEW LINE -->
+                <div class="w-100"></div>
+
+                <!-- PLAYER CARDS -->
+                <div class='col player_0_panel'>
+                    
+                    <!-- WHERE PLAYER PHOTO IS RENDERED  -->
+                    <div class='player_0_photo'> 
+
+                    </div>
+
+                    <!-- WHERE PLAYER STATS ARE RENDERED  -->
+                    <div class="player_0_stats">
+                        
+                        <ol id="player_0_stats">
+
+                            <li class="player_0_pts">
+
+                            </li>
+                            
+                            <li class="player_0_ast">
+
+                            </li>
+                            
+                            <li class="player_0_reb">
+
+                            </li>
+
+                        </ol>
+
+                    </div>
+                   
+                </div>
+
+                <div class='col player_1_panel'>
+                    <!-- WHERE PLAYER PHOTO IS RENDERED  -->
+                    <div class='player_1_photo'> 
+
+                    </div>
+
+                    <!-- WHERE PLAYER STATS ARE RENDERED  -->
+                    <div class="player_1_stats">
+                        
+                        <ol id="player_1_stats">
+
+                            <li class="player_1_pts">
+
+
+                            </li>
+                            
+                            <li class="player_1_ast">
+
+
+                            </li>
+                            
+                            <li class="player_1_reb">
+
+
+                            </li>
+
+                        </ol>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>

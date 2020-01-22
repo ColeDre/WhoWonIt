@@ -1,0 +1,39 @@
+***********DIST/SRC****************
+src is all our raw code DEVELOPMENT CODE DIST is for our minified code and PRODUCTION CODE
+
+****WEBPACK FEATURES*****
+WE DO NOT NEED TO INCLUDE THE SCRIPT TAG AT THE END OF THE PAGE FOR OUR INDEX FILE 
+eg: <SCRIPT SRC='OUR SAME WEBPACK SCRIPT' NOT NEEDED BOYS'>
+
+
+***COLORS**************************
+-ONLY USE DOMINANT COLOR IN A LIMITED NUMBER OF PLACES (PUT IT WHERE WE WANT PEOPLE TO PAY ATTENTION OR TAKE ACTION)...THIS IS SUPPOSED TO BRING FOCUS 
+
+-USE ACCENT COLORS TO HIGHLIGHT QUOTES BUTTONS OR SUBTITLES (USE 1 / 2)
+
+~~~~BASE COLOR~~~
+DOMINANT COLOR: #A65453
+ACCENT COLOR: #574C4C
+-BACKGROUND-COLOR: #F3F3EE
+
+***********TEXT******************
+Never choose a background that makes your text or content hard to read.“
+BLACK TEXT IS COOL —ONLY USE COLORED BODY TEXT WHEN ON HIGHLETED BACKGROUND 
+
+
+***********FONTS**************
+-USING CUSTOM FONTS 
+use EG:
+@font-face {
+    font-family: fontName;
+    src: url(location)
+}
+
+***REM AND EM****
+While em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size. REM: IS FOR ROOT BOYS REMEMBER THAT 
+
+
+**********HTML DESIGN******************
+-Give similar items same class name but differentiate them through #ids 
+-eg: we're using .player_card for both player cards but give them #card_o #card_1, 
+this also works for an active class so we can toggle it between the two without having to do so much code.
