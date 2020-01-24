@@ -44,7 +44,9 @@ body{
     
 }
 
-
+.player_0_photo, .player_1_photo {
+    height: 75%;
+}
 
 /* FONTS */
 @font-face{

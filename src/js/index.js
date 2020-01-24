@@ -1,9 +1,13 @@
-import Player from './models/Player.js'
+import PlayerData from './models/Player.js'
+import {elements} from './views/base'
+import * as searchView from './views/searchView'
 
 const state = {};
 
-state.player = new Player;
+const playerData = new PlayerData();
 
-state.player.getPlayers();
+//**************PLAYER SEARCHES *********************/
 
-console.log(state.player);
+// const controlPlayerSearch = () => {
+//     const query = 
+// }
