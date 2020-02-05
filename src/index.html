@@ -21,17 +21,30 @@
             
             <div class="row mx-0" id='hub'>
                 
-                <!-- THIS IS WHERE THE SEARCH BARS ARE  -->
-                <!-- EASIER TO NAME 0 AND 1 FOR OUR CONTROLLER LOGIC-->
-                <div class='col player_0_search mb-2'>
+                <div class="col">
                     
-                    <input type="text" id="player_0_search_result"/>
+                    <form class='search'>
+                        <div class="row">
+                            <!-- THIS IS WHERE THE SEARCH BARS ARE  -->
+                            <!-- EASIER TO NAME 0 AND 1 FOR OUR CONTROLLER LOGIC-->
+                            <div class='col player_0_search mb-2'>
+                                
+                                <input type="text" id="player_0_search_result"/>
 
-                </div>
+                            </div>
+                            
+                            <div class="col"> 
+                                <button type="submit" class="btn btn-dark">Search</button>
+                            </div>
+                            
+                            <div class='col player_1_search mb-2'>
 
-                <div class='col player_1_search mb-2'>
+                                <input type="text" id="player_1_search_result"/>
 
-                    <input type="text" id="player_1_search_result"/>
+                            </div>
+                        </div>
+                        
+                    </form>
 
                 </div>
 

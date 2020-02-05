@@ -41,11 +41,16 @@ body{
     border-radius: 35px;
     border: .1em solid #574C4C;
     /* Values with omitted values are x, y eg: in this case padding: x units , y units  */
+    outline: none;
     
 }
 
 .player_0_photo, .player_1_photo {
     height: 75%;
+}
+
+.player-active {
+    
 }
 
 /* FONTS */

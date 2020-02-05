@@ -22,9 +22,9 @@ export default class PlayerData {
                     i++;
                 }
 
-                console.log(results);
-                console.log(this.playerResults)
-                return results;
+                // console.log(results);
+                // console.log(this.playerResults)
+                return this.playerResults;
             } 
             
             
@@ -34,47 +34,18 @@ export default class PlayerData {
         }
     }
 
-    async getPlayers(){
+    //this method adds players names and stats to their queries instance 
+    async populatePlayer(playerData){
+        this.id = playerData.id;
+        this.first_name = playerData.first_name;
+        this.last_name = playerData.last_name;
         
-        
-        try {
-            //AWAIT IS USED TO TO WAIT FOR THE RESPONSE TO FINISH WITHOUT HALTIN THE LEXICAL CALLING OF THE CODE BOYS || HAS TO BE USED IN THE ASYNC FUNCTION 
-            // let res = await fetch(`https://www.balldontlie.io/api/v1/players?search=${query}`);
-            // let results = await res.json();
-            this.findPlayer('davis')
-            
-            
-            
+        try{
 
-            // for (let i = 2; i < 50; i++){
-            //     this.Players.push(results.data);
 
-            //     res = await fetch(`https://www.balldontlie.io/api/v1/players?page=${i}`);
-
-            //     results = await res.json();
-            // }
-            
-            // while(results.length > 0)
-
-            //
-
-            // for(let i = 0; i < results.meta.total_pages; i++){
-            //     let j = await fetch(`https://www.balldontlie.io/api/v1/players?page=${i}`);
-                
-            // }
-            //WE ALSO USE AWAIT HERE BECAUSE WE HAVE TO WAIT FOR THE VALUES OF THE RESOLVED PROMISE *res = await fetch(url)* TO BE RETURNED 
-            //WITHOUT THE AWAIT THE CODE IS JUST RAN BOYS with out the RESOLVE OR REJECT VALUES
-
-            // LOOPING THROUGH THE ARRAY OF PLAYERS RETURNED FROM THE FETCH USING FOR OF 
-            // for (const el of results.data) {
-            //     this.Players.push(el);
-            // }
-            
-            return this.Players;
-
-        } catch(err)    {
+        } catch(err) {
             console.log(err);
-        }; 
+        }
     }
 
 }
